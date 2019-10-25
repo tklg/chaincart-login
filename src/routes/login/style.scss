@@ -1,0 +1,7 @@
+@import "src/style/vars";
+@import "src/style/buttons";
+@import "src/style/forms";
+
+.login {
+  @include login-form;
+}
