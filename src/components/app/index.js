@@ -4,6 +4,7 @@ import style from './style.scss'
 // Code-splitting is automated for routes
 import Login from '../../routes/login'
 import Register from '../../routes/register'
+import Recover from '../../routes/recover'
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -22,6 +23,7 @@ export default class App extends Component {
           <Router onChange={this.handleRoute}>
             <Login path='/login' />
             <Register path='/register' />
+            <Recover path='/recover-password' />
           </Router>
         </div>
       </div>
