@@ -18,7 +18,9 @@ export default class App extends Component {
   render () {
     return (
       <div id='app'>
-        {<div class={style['left-block']} />}
+        <div class={style['left-block']}>
+          <img alt='logo' src='/assets/logo.svg' />
+        </div>
         <div class={style['right-block']}>
           <Router onChange={this.handleRoute}>
             <Login path='/login' />
